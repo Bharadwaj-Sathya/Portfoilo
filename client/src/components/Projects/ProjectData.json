@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "Image": "../assets/images/project/co2.jpg",
+        "Project Name": "Recipe Recommendation System",
+        "Type": "Machine Learning",
+        "Sub Type": "Supervised Learning - Regression",
+        "Algorithm": "Simple Linear Regression",
+        "Date Of Created": "24 Deember 2022",
+        "Description": "Canada Fuel consumption with co2 emission of a particular vehicles. Predictiong the co2 emmision by using ML algorithm.",
+        "Github Link": "",
+        "Blog": ""
+    },
+    {
+        "id": 2,
+        "Image": "https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg",
+        "Project Name": "Text Analysis",
+        "Type": "Machine Learning",
+        "Sub Type": "Supervised Learning - Regression",
+        "Algorithm": "Multiple Linear Regression",
+        "Date Of Created": "In progress",
+        "Description": "Canada Fuel consumption of vehicles and their co2 emission of a particular vehicles. Predictiong the co2 emmision by using ML algorithm.",
+        "Github Link": "",
+        "Blog": ""
+    }
+]
