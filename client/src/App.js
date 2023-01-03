@@ -9,6 +9,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import "./components/assets/css/style.css";
 import Blogs from "./components/Blogs";
+import Recipie from "./components/Projects/RecipieRecommendation/Recipie";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/projects" element={<Projects />} />
+        <Route exact path="/project/1" element={<Recipie />} />
+
         <Route exact path="/blogs" element={<Blogs />} />
 
         <Route path="/*" element={<Navigate to={"/home"} />} />

@@ -3,13 +3,13 @@
         "id": 1,
         "Image": "../assets/images/project/co2.jpg",
         "Project Name": "Recipe Recommendation System",
-        "Type": "Machine Learning",
-        "Sub Type": "Supervised Learning - Regression",
-        "Algorithm": "Simple Linear Regression",
-        "Date Of Created": "24 Deember 2022",
+        "Type": "Deep Learning",
+        "Sub Type": "Object Detection",
+        "Algorithm": "Yolov7",
+        "Date Of Created": "In Progress",
         "Description": "Canada Fuel consumption with co2 emission of a particular vehicles. Predictiong the co2 emmision by using ML algorithm.",
         "Github Link": "",
-        "Blog": ""
+        "Blog": "/project/1"
     },
     {
         "id": 2,
