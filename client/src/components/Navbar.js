@@ -63,9 +63,10 @@ function Navbar() {
 
         <div class="colorlib-footer">
           <p>
-            All rights reserved | This template is made with{" "}
+            Follow Me:
+            {/* All rights reserved | This template is made with{" "}
             <i class="icon-heart" aria-hidden="true"></i> by{" "}
-            <Link to="www.bharadwajsathya.com">Bharadwaj</Link>
+            <Link to="www.bharadwajsathya.com">Bharadwaj</Link> */}
           </p>
           <ul>
             <li>
