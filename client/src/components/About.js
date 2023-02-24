@@ -36,7 +36,7 @@ function About() {
           <br></br>
           <div className="container  mt-4">
             <div className="row">
-              <div className="col-md-6 col-lg-6">
+              <div className="col-md-12 col-lg-12">
                 <div className="card">
                   <div className="card-body">
                     <h4>
@@ -54,10 +54,38 @@ function About() {
                       </span>
                     </h6>
                     <p>Business Analyst</p>
-                    <p className="subtitle">
-                      Working on supply chain project. Developing the forecast
-                      algorithms in Machine Learning.
-                    </p>
+                    <ul>
+                      <li className="subtitle">
+                        Experience using machine learning algorithms to optimize
+                        inventory levels and forecast demand.
+                      </li>
+                      <li className="subtitle">
+                        Proficient in programming languages such as Python and
+                        SQL for data analysis and modelling.{" "}
+                      </li>
+                      <li className="subtitle">
+                        {" "}
+                        Collaborated with cross-functional teams, including
+                        procurement, logistics, and operations, to drive process
+                        improvements and cost savings.{" "}
+                      </li>
+                      <li className="subtitle">
+                        {" "}
+                        Solid understanding of supply chain concepts, including
+                        demand forecasting, transportation management, and
+                        inventory control.
+                      </li>
+                      <li className="subtitle">
+                        Passionate about utilizing skills in machine learning
+                        and programming to drive process improvements and cost
+                        savings in the supply chain.{" "}
+                      </li>
+                      <li className="subtitle">
+                        Proven ability to effectively communicate data-driven
+                        insights to non-technical stakeholders to drive business
+                        decisions.
+                      </li>
+                    </ul>
                     <hr></hr>
                     <h6
                       className="title"
@@ -70,15 +98,69 @@ function About() {
                       </span>
                     </h6>{" "}
                     <p>Junior Data Science Engineer</p>
-                    <p className="subtitle">
-                      Developed and implemented algorithm for detection and
-                      classification problem using deep learning algorithms.
-                    </p>
-                    <p className="subtitle">
-                      Designed pipeline of the whole project of Identification
-                      of Electrical Appliances. Created a Visualization for
-                      detailed understanding of Power Consumption.
-                    </p>
+                    <ul>
+                      <li>
+                        Experienced data science engineering focusing on
+                        identifying electrical appliances using machine learning
+                        techniques.
+                      </li>
+                      <li>
+                        {" "}
+                        Proficient in data pre-processing, feature extraction,
+                        and model training using Python and various machine
+                        learning libraries such as sci-kit-learn and TensorFlow.
+                      </li>
+                      <li>
+                        {" "}
+                        Developed and deployed models for identifying electrical
+                        appliances based on their power consumption and other
+                        features using techniques such as decision trees, random
+                        forests, and neural networks.
+                      </li>
+                      <li>
+                        {" "}
+                        Conducted extensive data analysis to identify patterns
+                        and correlations in electrical appliance usage, leading
+                        to insights that can be used for energy efficiency and
+                        cost savings.
+                      </li>
+                      <li>
+                        {" "}
+                        Expertise in data visualization and dashboard
+                        development using tools such as React JS and Power BI to
+                        provide actionable insights to stakeholders.
+                      </li>
+                      <li>
+                        {" "}
+                        Collaborated with cross-functional teams, including
+                        product development, engineering, and business
+                        development, to translate insights from data analysis
+                        into actionable business strategies.
+                      </li>
+                      <li>
+                        {" "}
+                        Experience in data collection and pre-processing using
+                        IoT sensors and other data collection methods.
+                      </li>
+                      <li>
+                        {" "}
+                        Strong knowledge of statistical modeling techniques,
+                        including regression analysis and time series
+                        forecasting, to support data-driven decision-making.
+                      </li>
+                      <li>
+                        {" "}
+                        Excellent communication and presentation skills, with
+                        the ability to effectively communicate technical
+                        concepts to non-technical stakeholders.
+                      </li>
+
+                      <li>
+                        {" "}
+                        Passionate about leveraging data science and machine
+                        learning to drive innovation and create business value.
+                      </li>
+                    </ul>
                     <hr></hr>
                     <h6
                       className="title"
@@ -91,15 +173,38 @@ function About() {
                       </span>
                     </h6>{" "}
                     <p>Software Intern</p>
-                    <p className="subtitle">
-                      Well versed with life cycle of the software development
-                      process.<br></br>Got hands on experience with PHP and SQL
-                      development on hotel management software.
-                    </p>
+                    <ul>
+                      <li>
+                        Proficient in web development technologies such as HTML,
+                        CSS, JavaScript, and PHP.
+                      </li>
+                      <li>
+                        Developed and maintained websites and web applications.
+                        Experience in database design and development, including
+                        SQL.
+                      </li>
+                      <li>
+                        {" "}
+                        Familiarity with version control systems such as Git for
+                        code management and collaboration.
+                      </li>
+                      <li>
+                        {" "}
+                        Worked on various aspects of web development including
+                        front-end development and back-end development.
+                      </li>
+                      <li>
+                        {" "}
+                        Collaborated with cross-functional teams, including
+                        product development, UI/UX design, and quality
+                        assurance, to deliver high-quality web applications.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-6">
+
+              <div className="col-md-12 col-lg-12 mt-4">
                 <div className="card">
                   <div className="card-body">
                     <h4>
@@ -151,6 +256,7 @@ function About() {
                         <span>
                           <p>
                             <strong style={{ color: "#000" }}>URL: </strong>
+                            https://www.udemy.com/certificate/UC-5ZOTC3NU/
                           </p>
                         </span>
                       </li>
