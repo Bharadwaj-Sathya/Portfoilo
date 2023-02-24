@@ -15,6 +15,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/projects" element={<Projects />} />
@@ -22,7 +23,7 @@ function App() {
 
         <Route exact path="/blogs" element={<Blogs />} />
 
-        <Route path="/*" element={<Navigate to={"/home"} />} />
+        <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>
     </Router>
   );
