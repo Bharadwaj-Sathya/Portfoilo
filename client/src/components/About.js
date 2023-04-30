@@ -247,7 +247,9 @@ function About() {
                         Certified in UiPath Robotic Enterprise Framework.
                         <span>
                           <p>
-                            <strong style={{ color: "#000" }}>URL: </strong>
+                            <strong style={{ color: "#000" }}>
+                              URL: <a href=""></a>
+                            </strong>
                           </p>
                         </span>
                       </li>
@@ -256,7 +258,9 @@ function About() {
                         <span>
                           <p>
                             <strong style={{ color: "#000" }}>URL: </strong>
-                            https://www.udemy.com/certificate/UC-5ZOTC3NU/
+                            <a href="">
+                              https://www.udemy.com/certificate/UC-5ZOTC3NU/
+                            </a>
                           </p>
                         </span>
                       </li>
@@ -266,7 +270,9 @@ function About() {
                         <span>
                           <p>
                             <strong style={{ color: "#000" }}>URL: </strong>
-                            https://trailblazer.me/id?uid=bharadwajsathya&cmty=trailhead
+                            <a href="">
+                              https://trailblazer.me/id?uid=bharadwajsathya&cmty=trailhead
+                            </a>
                           </p>
                         </span>
                       </li>
