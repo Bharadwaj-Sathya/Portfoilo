@@ -142,24 +142,6 @@ function About() {
                         Experience in data collection and pre-processing using
                         IoT sensors and other data collection methods.
                       </li>
-                      <li>
-                        {" "}
-                        Strong knowledge of statistical modeling techniques,
-                        including regression analysis and time series
-                        forecasting, to support data-driven decision-making.
-                      </li>
-                      <li>
-                        {" "}
-                        Excellent communication and presentation skills, with
-                        the ability to effectively communicate technical
-                        concepts to non-technical stakeholders.
-                      </li>
-
-                      <li>
-                        {" "}
-                        Passionate about leveraging data science and machine
-                        learning to drive innovation and create business value.
-                      </li>
                     </ul>
                     <hr></hr>
                     <h6
