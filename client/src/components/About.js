@@ -126,12 +126,6 @@ function About() {
                       </li>
                       <li>
                         {" "}
-                        Expertise in data visualization and dashboard
-                        development using tools such as React JS and Power BI to
-                        provide actionable insights to stakeholders.
-                      </li>
-                      <li>
-                        {" "}
                         Collaborated with cross-functional teams, including
                         product development, engineering, and business
                         development, to translate insights from data analysis
