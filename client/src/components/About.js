@@ -151,29 +151,22 @@ function About() {
                     <p>Software Intern</p>
                     <ul>
                       <li>
+                        {" "}
                         Proficient in web development technologies such as HTML,
                         CSS, JavaScript, and PHP.
                       </li>
                       <li>
-                        Developed and maintained websites and web applications.
-                        Experience in database design and development, including
-                        SQL.
+                        {" "}
+                        Experienced in developing and maintaining websites and
+                        web applications, including database design and
+                        development using SQL.
                       </li>
                       <li>
                         {" "}
-                        Familiarity with version control systems such as Git for
-                        code management and collaboration.
-                      </li>
-                      <li>
-                        {" "}
-                        Worked on various aspects of web development including
-                        front-end development and back-end development.
-                      </li>
-                      <li>
-                        {" "}
-                        Collaborated with cross-functional teams, including
-                        product development, UI/UX design, and quality
-                        assurance, to deliver high-quality web applications.
+                        Familiar with version control systems like Git for code
+                        management and has worked on both front-end and back-end
+                        development. Collaborated with crossfunctional teams to
+                        deliver high-quality web applications.
                       </li>
                     </ul>
                   </div>
