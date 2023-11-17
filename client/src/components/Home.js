@@ -92,7 +92,7 @@ const Home = () => {
                       <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://www.linkedin.com/in/bharadwaj-i-v-v-s-9b0843153/"
+                        href="https://www.linkedin.com/in/bharadwajsathya/"
                       >
                         <IconContext.Provider
                           value={{
