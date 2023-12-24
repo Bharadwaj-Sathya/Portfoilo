@@ -213,6 +213,26 @@ function About() {
                     </h4>
                     <ul>
                       <li>
+                        Certified in Natural Language Processing (NLP) through completion of a comprehensive course on Udemy, demonstrating expertise in language understanding and processing techniques.
+                        <span>
+                          <p>
+                            <strong style={{ color: "#000" }}>
+                              URL: <a href="https://www.udemy.com/certificate/UC-652c63f6-e7fa-46e2-9114-0433751621a4/"></a>
+                            </strong>
+                          </p>
+                        </span>
+                      </li>
+                      <li>
+                        Successfully completed Generative AI coursework, showcasing proficiency in advanced artificial intelligence techniques.
+                        <span>
+                          <p>
+                            <strong style={{ color: "#000" }}>
+                              URL: <a href="https://drive.google.com/file/d/1mcDE-IBr8D4b0pC1feLgiib4NNeqAOe7/view?usp=sharing"></a>
+                            </strong>
+                          </p>
+                        </span>
+                      </li>
+                      <li>
                         Certified in UiPath Robotic Enterprise Framework.
                         <span>
                           <p>
