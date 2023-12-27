@@ -27,7 +27,7 @@ function App() {
         <Route exact path="/blogs" element={<Blogs />} />
 
         {/* Dynamic Blog route with a parameter */}
-        <Route exact path="/blog/:id" component={<Blog />} />
+        <Route exact path="/blog/:id" element={<Blog />} />
 
         <Route path="/*" element={<Navigate to={"/home"} />} />
       </Routes>
