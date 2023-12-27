@@ -8,6 +8,7 @@ async function fetchHtmlFile() {
   const htmlContent = await response.text();
   return htmlContent;
 }
+
 const Blog = () => {
   const [project, setProject] = useState(null);
   const [htmlContent, setHtmlContent] = useState('');
