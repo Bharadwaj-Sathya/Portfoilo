@@ -269,6 +269,7 @@ function About() {
                   </div>
                 </div>
               </div>
+              <div id="gh" data-login="YOUR_GITHUB_LOGIN"></div>
             </div>
           </div>
         </section>
