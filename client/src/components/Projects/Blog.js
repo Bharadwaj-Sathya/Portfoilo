@@ -62,7 +62,7 @@ const Blog = () => {
                 <h2 class="mb-3 font-weight-bold">
                   The Newest Technology On This Year 2019
                 </h2>
-                <p>
+                <p> 
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Reiciendis, eius mollitia suscipit, quisquam doloremque
                   distinctio perferendis et doloribus unde architecto optio
