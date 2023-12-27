@@ -13,25 +13,25 @@
     },
     {
         "id": 2,
-        "Image": "https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg",
-        "Project Name": "House Prices",
+        "Image": "../assets/images/project/Vegetables-Multiple.jpg",
+        "Project Name": "Predicting Food Prices in Nigreia",
         "Type": "Machine Learning",
         "Sub Type": "Supervised Learning - Regression",
         "Algorithm": "Multiple Linear Regression",
         "Date Of Created": "In progress",
-        "Description": "Canada Fuel consumption of vehicles and their co2 emission of a particular vehicles. Predictiong the co2 emmision by using ML algorithm.",
+        "Description": "The Economics of Eating: Predicting Food Price Trends in Nigeria.",
         "Github Link": "",
         "Blog": "/blog/2"
     },
     {
         "id": 3,
-        "Image": "https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg",
-        "Project Name": "Credit Card Approval",
+        "Image": "../assets/images/project/Fish-Polynomial.jpg",
+        "Project Name": "Fish Market",
         "Type": "Machine Learning",
-        "Sub Type": "Supervised Learning - clasification",
-        "Algorithm": "Logistic Regression",
+        "Sub Type": "Supervised Learning - Regression",
+        "Algorithm": "Polynomial Regression",
         "Date Of Created": "In progress",
-        "Description": "Canada Fuel consumption of vehicles and their co2 emission of a particular vehicles. Predictiong the co2 emmision by using ML algorithm.",
+        "Description": "Estimate the weight of a fish based on its species and the physical measurements.",
         "Github Link": "",
         "Blog": "/blog/3"
     }
