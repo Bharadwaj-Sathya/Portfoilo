@@ -11,6 +11,7 @@ import "./components/assets/css/style.css";
 import Blogs from "./components/Blogs";
 import Recipie from "./components/Projects/RecipieRecommendation/Recipie";
 import Datatable from "./components/Datatable";
+import Blog from "./components/Projects/Blog";
 
 function App() {
   return (
@@ -25,7 +26,11 @@ function App() {
 
         <Route exact path="/blogs" element={<Blogs />} />
 
-        <Route path="/*" element={<Navigate to={"/"} />} />
+        {/* Dynamic Blog route with a parameter */}
+        <Route path="/blog/:id" element={<Blog />} />
+
+
+        <Route path="/*" element={<Navigate to={"/home"} />} />
       </Routes>
     </Router>
   );

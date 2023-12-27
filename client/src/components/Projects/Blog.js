@@ -1,7 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../Layout";
+import Data from "../assets/data/Data.json";
+import { useParams } from 'react-router-dom';
 
+async function fetchHtmlFile() {
+  const response = await fetch('https://raw.githubusercontent.com/Bharadwaj-Sathya/AI/main/MachineLearning/SupervisedLearning/Regression/SimpleLinearRegression/Project/SimpleLinearRegression.html');
+  const htmlContent = await response.text();
+  return htmlContent;
+}
 const Blog = () => {
+  const [project, setProject] = useState(null);
+  const [htmlContent, setHtmlContent] = useState('');
+
+  // Access the dynamic parameter (id) using useParams hook
+  const { id } = useParams();
+
+  useEffect(() => {
+
+    // Filter the project based on the provided projectId
+    const filteredProject = Data.find(p => p.id === parseInt(id));
+
+    // Update the state with the filtered project
+    setProject(filteredProject);
+
+    async function fetchData() {
+      const content = await fetchHtmlFile();
+      console.log(content); // Log the content to the console
+
+      setHtmlContent(content);
+    }
+
+    fetchData();
+  }, [id]);
+
+  if (!project) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <Layout>
       <div id="colorlib-main">
@@ -11,9 +46,9 @@ const Blog = () => {
         >
           <div class="overlay"></div>
           <div class="js-fullheight d-flex justify-content-center align-items-center">
-            <div class="col-md-8 text text-center">
+            <div class="col-md-8 mb-3 text text-center">
               <div class="desc">
-                <h1 class="mb-3">Blog Details</h1>
+                <h1 class="mb-3">{project['Project Name']}</h1>
               </div>
             </div>
           </div>
@@ -21,7 +56,9 @@ const Blog = () => {
         <section class="ftco-section">
           <div class="container">
             <div class="row">
-              <div c lass="col-lg-8 ftco-animate">
+              <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+
+              {/* <div c lass="col-lg-8 ftco-animate">
                 <h2 class="mb-3 font-weight-bold">
                   The Newest Technology On This Year 2019
                 </h2>
@@ -112,7 +149,7 @@ const Blog = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

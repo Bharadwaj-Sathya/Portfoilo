@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import Cards from "./Projects/Cards";
-import Data from ".//Projects/Data.json";
+import Data from "../components/assets/data/Data.json";
 
 const Blogs = () => {
   return (
