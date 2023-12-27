@@ -1,40 +1,43 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../Layout";
 import Data from "../assets/data/Data.json";
-import { useParams } from 'react-router-dom';
-
-async function fetchHtmlFile() {
-  const response = await fetch('https://raw.githubusercontent.com/Bharadwaj-Sathya/AI/main/MachineLearning/SupervisedLearning/Regression/SimpleLinearRegression/Project/SimpleLinearRegression.html');
-  const htmlContent = await response.text();
-  return htmlContent;
-}
+import { useParams } from "react-router-dom";
 
 const Blog = () => {
   const [project, setProject] = useState(null);
-  const [htmlContent, setHtmlContent] = useState('');
+  const [htmlContent, setHtmlContent] = useState("");
 
   // Access the dynamic parameter (id) using useParams hook
   const { id } = useParams();
 
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const filteredProject = Data.find((p) => p.id === parseInt(id));
 
-    // Filter the project based on the provided projectId
-    const filteredProject = Data.find(p => p.id === parseInt(id));
+        if (!filteredProject) {
+          throw new Error(`Project with ID ${id} not found`);
+        }
 
-    // Update the state with the filtered project
-    setProject(filteredProject);
+        setProject(filteredProject);
 
-    async function fetchData() {
-      const content = await fetchHtmlFile();
-      console.log(content); // Log the content to the console
+        const response = await fetch(filteredProject["Github Link"]);
 
-      setHtmlContent(content);
-    }
+        if (!response.ok) {
+          throw new Error(`Failed to fetch GitHub link (${response.status})`);
+        }
+
+        const htmlContent = await response.text();
+        setHtmlContent(htmlContent);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
 
     fetchData();
   }, [id]);
 
-  if (!project) {
+  if (!project || !htmlContent) {
     return <div>Loading...</div>;
   }
 
@@ -49,7 +52,7 @@ const Blog = () => {
           <div class="js-fullheight d-flex justify-content-center align-items-center">
             <div class="col-md-8 mb-3 text text-center">
               <div class="desc">
-                <h1 class="mb-3">{project['Project Name']}</h1>
+                <h1 class="mb-3">{project["Project Name"]}</h1>
               </div>
             </div>
           </div>
