@@ -217,8 +217,8 @@ function About() {
                         <span>
                           <p>
                             <strong style={{ color: "#000" }}>
-                              URL: <a href="">https://www.udemy.com/certificate/UC-652c63f6-e7fa-46e2-9114-0433751621a4/</a>
-                            </strong>
+                              URL:</strong> <a href="">https://www.udemy.com/certificate/UC-652c63f6-e7fa-46e2-9114-0433751621a4/</a>
+
                           </p>
                         </span>
                       </li>
@@ -227,8 +227,8 @@ function About() {
                         <span>
                           <p>
                             <strong style={{ color: "#000" }}>
-                              URL: <a href="">https://drive.google.com/file/d/1mcDE-IBr8D4b0pC1feLgiib4NNeqAOe7/view?usp=sharing</a>
-                            </strong>
+                              URL: </strong><a href="">https://drive.google.com/file/d/1mcDE-IBr8D4b0pC1feLgiib4NNeqAOe7/view?usp=sharing</a>
+
                           </p>
                         </span>
                       </li>
@@ -237,8 +237,7 @@ function About() {
                         <span>
                           <p>
                             <strong style={{ color: "#000" }}>
-                              URL: <a href=""></a>
-                            </strong>
+                              URL: </strong> <a href=""></a>
                           </p>
                         </span>
                       </li>
