@@ -49,9 +49,9 @@ const Blog = () => {
         >
           <div class="overlay"></div>
           <div class="js-fullheight d-flex justify-content-center align-items-center">
-            <div class="col-md-8 mb-3 text text-center">
+            <div class="col-md-8 text text-center">
               <div class="desc">
-                <h1 class="mb-3">{project["Project Name"]}</h1>
+                <h1 class="">{project["Project Name"]}</h1>
               </div>
             </div>
           </div>
@@ -60,7 +60,6 @@ const Blog = () => {
           <div class="container">
             <div class="row">
               <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-
               {/* <div c lass="col-lg-8 ftco-animate">
                 <h2 class="mb-3 font-weight-bold">
                   The Newest Technology On This Year 2019
