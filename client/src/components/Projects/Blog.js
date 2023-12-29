@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../Layout";
 import Data from "../assets/data/Data.json";
 import { useParams } from "react-router-dom";
+import axios from 'axios';
 
 const Blog = () => {
   const [project, setProject] = useState(null);
@@ -11,33 +12,31 @@ const Blog = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const fetchData = async () => {
+    const filteredProject = Data.find((p) => p.id === parseInt(id));
+
+    if (!filteredProject) {
+      throw new Error(`Project with ID ${id} not found`);
+    }
+    setProject(filteredProject);
+
+    const fetchHtml = async () => {
       try {
-        const filteredProject = Data.find((p) => p.id === parseInt(id));
-
-        if (!filteredProject) {
-          throw new Error(`Project with ID ${id} not found`);
-        }
-
-        setProject(filteredProject);
-
-        const response = await fetch(filteredProject["Github Link"]);
-
-        if (!response.ok) {
-          throw new Error(`Failed to fetch GitHub link (${response.status})`);
-        }
-
-        const htmlContent = await response.text();
-        setHtmlContent(htmlContent);
+        const response = await axios.get(filteredProject['Github Link'],
+          {
+            referrerPolicy: 'no-referrer-when-downgrade'
+          }
+        );
+        const data = await response.data;
+        setHtmlContent(data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        throw error; // Rethrow the error for the component to handle
       }
     };
 
-    fetchData();
+    fetchHtml();
   }, [id]);
 
-  if (!project || !htmlContent) {
+  if (!project) {
     return <div>Loading...</div>;
   }
 
