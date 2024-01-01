@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "./Layout";
 import Cards from "./Projects/Cards";
 import Data from ".//Projects/ProjectData.json";
-// import co2 from "./assets/images/project/co2.jpg";
 
 const Projects = () => {
   return (
