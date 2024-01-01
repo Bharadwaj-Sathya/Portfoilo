@@ -12,9 +12,7 @@ const Home = () => {
     <Layout>
       <div
         id="colorlib-main"
-        style={{
-          height: window.innerHeight,
-        }}
+        style={{ height: "100vh" }}
       >
         {/* <div class="overlay"></div> */}
         <div class="hero-wrap js-fullheight bg">
