@@ -15,12 +15,12 @@ const Cards = ({
 }) => {
   return (
     <div className="container">
-      <div className="row mt-5">
+      <div className="row mt-3">
         <div className="preview-card" key={id}>
           <div className="preview-card__wrp">
             <div className="preview-card__item">
               <div className="preview-card__img">
-                <img src={Image} alt="" style={{}} />
+                <img src={Image} alt="" />
               </div>
               <div className="preview-card__content">
                 <span className="preview-card__code">{date_of_created}</span>
