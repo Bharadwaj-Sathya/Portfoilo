@@ -29,7 +29,7 @@ const Blog = () => {
         const data = await response.data;
         setHtmlContent(data);
       } catch (error) {
-        throw error; // Rethrow the error for the component to handle
+        console.log(error); // Rethrow the error for the component to handle
       }
     };
 

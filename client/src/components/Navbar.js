@@ -69,7 +69,7 @@ function Navbar() {
             <Link to="www.bharadwajsathya.com">Bharadwaj</Link> */}
           </p>
           <ul>
-            <li>
+            {/* <li>
               <a target="_blank" href="https://twitter.com/SathyaBharadwaz">
                 {" "}
                 <IconContext.Provider
@@ -82,7 +82,7 @@ function Navbar() {
                   <FaTwitter></FaTwitter>
                 </IconContext.Provider>
               </a>
-            </li>
+            </li> */}
             <li>
               <a target="_blank" href="https://github.com/Bharadwaj-Sathya">
                 <IconContext.Provider

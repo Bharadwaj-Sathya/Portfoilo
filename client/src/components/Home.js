@@ -35,7 +35,7 @@ const Home = () => {
                     industry problems.
                   </p>
                   <ul class="ftco-social mt-3">
-                    <li>
+                    {/* <li>
                       <a
                         rel="noreferrer"
                         target="_blank"
@@ -51,7 +51,7 @@ const Home = () => {
                           <FaTwitter></FaTwitter>
                         </IconContext.Provider>
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         rel="noreferrer"
