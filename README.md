@@ -1,75 +1,145 @@
-<h1 align="center"> Hi, <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/> I'm Bharadwaj Sathya</h1>
+<h1 align="center">
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px"/>
+  Bharadwaj I V V S
+</h1>
 
-## About Me
+<h3 align="center">AI & Data Science Engineer · AWS Bedrock · MCP Architectures · LLM Agents</h3>
 
-- 💼 I’m currently working as a <strong>Business Analyst - Data Science</strong> at Genpact.
-- 📋 Previously worked as a Junior Data Science Engineer at LogiQ Dreams.
-- 🧭 Enthusiast exploring and working in Data Science and Software Engineering.
-- 🌱 Currently learning core concepts in Neural Networks.
-- 💞️ Looking to collaborate on developing real-time projects.
-- 👀 How to reach me [www.bharadwajsathya.com](https://www.bharadwajsathya.com)
-- 📫 How to reach me: Check social links below.
+<p align="center">
+  <a href="https://www.linkedin.com/in/bharadwajsathya/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-bharadwajsathya-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/Bharadwaj-Sathya" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-Bharadwaj--Sathya-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="mailto:bharadwjinamahanthi@gmail.com">
+    <img src="https://img.shields.io/badge/Email-bharadwjinamahanthi@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://drive.google.com/file/d/1_zDbIYRkHit-T9xAU_2TZMgwF21wh4JJ/view?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/Resume-View%20PDF-6C63FF?style=flat-square&logo=googledrive&logoColor=white" alt="Resume"/>
+  </a>
+</p>
 
-## Social Links
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Bharadwaj-Sathya&color=6C63FF&style=flat-square&label=Profile+Views" alt="profile views"/>
+</p>
 
-<div>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/linkedin/linkedin-original.svg" title="Linked In" alt="Linked In" width="40" height="40" />&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/google/google-original.svg" title="Gmail" alt="Gmail" width="40" height="40" />&nbsp;
-</div>
+---
 
-## Languages and Tools
+## 👨‍💻 About Me
 
-<div>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40" />&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" title="CSS3" alt="CSS" width="40" height="40" />&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40" />&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40" />&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux" width="40" height="40" />&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40" />&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/cplusplus/cplusplus-original.svg" title="C++" alt="C++" width="40" height="40" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40" />
-</div>
-<br></br>
-<!--START_SECTION:waka-->
+AI & Data Science Engineer with **5+ years** of experience across AI agent engineering, cloud infrastructure, and full-stack development. I build production-grade AI agents on **AWS Bedrock** and connect them to the tools organizations already depend on — Splunk, Datadog, Kubernetes — through **multi-server MCP architectures**, so automation plugs into real workflows instead of living beside them.
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-62-blue)
+- 🤖 Building **production AI agents** on AWS Bedrock with Claude Sonnet
+- 🔗 Architecting **multi-server MCP solutions** for unified observability & incident response  
+- 🧠 Deep experience in **NLP, LLMs, RAG, Computer Vision** and Generative AI
+- ☁️ Shipping scalable systems on **AWS & GCP** with Docker, Kubernetes, GitHub Actions
+- 📍 Based in **Telangana, India** · Currently @ **Genpact**
 
-**🐱 My GitHub Data** 
+---
 
-> 📦 377.6 kB Used in GitHub's Storage 
- > 
-> 🏆 210 Contributions in the Year 2023
- > 
-> 💼 Opted to Hire
- > 
-> 📜 8 Public Repositories 
- > 
-> 🔑 2 Private Repositories 
- > 
-**I Mostly Code in Jupyter Notebook** 
+## 🛠️ Tech Stack
 
-```text
-Jupyter Notebook         5 repos             ██████████████░░░░░░░░░░░   55.56 % 
-Python                   2 repos             ██████░░░░░░░░░░░░░░░░░░░   22.22 % 
-C++                      1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
-CSS                      1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
-```
+### Languages & Frameworks
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 
+### AI & LLMs
+![Claude](https://img.shields.io/badge/Claude-D97706?style=flat-square&logo=anthropic&logoColor=white)
+![LLMs](https://img.shields.io/badge/LLMs-6C63FF?style=flat-square&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-22D3EE?style=flat-square&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-A78BFA?style=flat-square&logoColor=white)
+![AI Agents](https://img.shields.io/badge/AI%20Agents-F472B6?style=flat-square&logoColor=white)
+![NLP](https://img.shields.io/badge/NLP-34D399?style=flat-square&logoColor=white)
 
+### Cloud & DevOps
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![AWS Bedrock](https://img.shields.io/badge/AWS%20Bedrock-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-// **Timeline**
+### Databases & Observability
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white)
+![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white)
 
-// ![Lines of Code chart](https://raw.githubusercontent.com/Bharadwaj-Sathya/Bharadwaj-Sathya/main/assets/bar_graph.png)
+---
 
+## 💼 Experience
 
- Last Updated on 25/12/2023 08:35:00 UTC
-<!--END_SECTION:waka-->
+| Period | Role | Company |
+|--------|------|---------|
+| Jul 2022 – Present | **Data Science Engineer** | Genpact, Telangana |
+| Dec 2020 – Jun 2022 | Junior Data Science Engineer | LogiQ Dreams, Kerala |
+| Apr 2018 – May 2018 | Software Intern | PSQUARE Groups, Visakhapatnam |
 
-## 🔥 Streaks
+### Highlights @ Genpact
+- 🤖 Built production AI agents on **AWS Bedrock** with Claude Sonnet; architected multi-server MCP connecting Splunk, Datadog & Kubernetes for automated incident response
+- 📉 Designed supply-chain forecasting app on AWS → reduced inventory discrepancies by **30–40%**
+- ⚙️ Automated **40%** of purchase-order workflow end-to-end
+- 📊 Built market-mix model (Random Forest + regression) → improved marketing ROI by **15%**
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Bharadwaj-Sathya)](https://git.io/streak-stats)
+---
 
-## 📈 Github Stats 
+## 🚀 Featured Project
 
-![GitHub Stats (Amongst top 50%)](https://github-readme-stats.vercel.app/api?username=Bharadwaj-Sathya&show_icons=true&hide=issues,prs&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Bharadwaj-Sathya&layout=compact&langs_count=4&theme=radical)
+### 🇮🇳 GovSahay AI
+> **AI-Powered Indian Government Services Assistant**
+
+A multilingual, evidence-grounded AI assistant that helps citizens discover government services, understand application procedures, check scheme eligibility, and navigate official government sources.
+
+**Architecture:** Hybrid RAG · Agentic Query Orchestration · Evidence Verification
+
+**Built with:**
+`Python` `FastAPI` `Next.js` `Qdrant` `PostgreSQL` `BM25` `LLMs` `Docker`
+
+**Key capabilities:**
+- → Government service discovery
+- → Scheme eligibility reasoning  
+- → Step-by-step application guidance
+- → Multilingual question answering
+- → Source citations & evidence tracking
+- → Hallucination detection & confidence scoring
+
+---
+
+## � GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Bharadwaj-Sathya&show_icons=true&hide=issues,prs&theme=tokyonight&border_radius=10&hide_border=true" alt="GitHub Stats" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bharadwaj-Sathya&layout=compact&langs_count=6&theme=tokyonight&border_radius=10&hide_border=true" alt="Top Languages" height="165"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Bharadwaj-Sathya&theme=tokyonight&hide_border=true&border_radius=10" alt="GitHub Streak"/>
+</p>
+
+---
+
+## 🎓 Education
+
+**B.Tech, Computer Science & Engineering**  
+Swarna Bharathi Institute of Science & Technology · Khammam, India · 2015–2019
+
+---
+
+## 📬 Contact
+
+| | |
+|---|---|
+| 📧 Email | [bharadwjinamahanthi@gmail.com](mailto:bharadwjinamahanthi@gmail.com) |
+| 💼 LinkedIn | [linkedin.com/in/bharadwajsathya](https://www.linkedin.com/in/bharadwajsathya/) |
+| 🐙 GitHub | [github.com/Bharadwaj-Sathya](https://github.com/Bharadwaj-Sathya) |
+| 📱 Phone | +91 96660 33443 |
+
+---
+
+<p align="center">
+  <i>"Torture the data and it will confess to anything." — Ronald Coase</i>
+</p>

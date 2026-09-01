@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Bharadwaj I V V S — AI & Data Science Engineer. Building production AI agents, MCP architectures, and cloud-native systems." />
+  <title>Bharadwaj I V V S — AI & Data Science Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#hero" aria-label="Home">
+        <span class="nav__logo-bracket">[</span>bharadwaj<span class="nav__logo-bracket">]</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#stack" class="nav__link">Stack</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+            <!-- Sun -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+            <!-- Moon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+        </button>
+        <a href="assets/resume/Bharadwaj_Resume.pdf" target="_blank" rel="noopener noreferrer"
+          class="btn btn--outline nav__resume" aria-label="View Resume">Resume ↗</a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" role="menu" hidden>
+      <a href="#experience" class="nav__mobile-link" role="menuitem">Experience</a>
+      <a href="#stack" class="nav__mobile-link" role="menuitem">Stack</a>
+      <a href="#projects" class="nav__mobile-link" role="menuitem">Projects</a>
+      <a href="#about" class="nav__mobile-link" role="menuitem">About</a>
+      <a href="#contact" class="nav__mobile-link" role="menuitem">Contact</a>
+      <a href="assets/resume/Bharadwaj_Resume.pdf" target="_blank" rel="noopener noreferrer"
+        class="nav__mobile-link nav__mobile-resume" role="menuitem">Resume ↗</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <!-- 3D animated neural net canvas -->
+      <canvas class="hero__canvas" id="neuralCanvas" aria-hidden="true"></canvas>
+      <div class="hero__noise" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__prompt" aria-label="Terminal prompt">
+            <span class="hero__cursor" aria-hidden="true">$</span>
+            <span id="typewriter" aria-live="polite"></span>
+          </p>
+
+          <h1 class="hero__name" id="hero-title">
+            <span class="hero__name-first">Bharadwaj</span>
+            <span class="hero__name-last">I V V S</span>
+          </h1>
+
+          <p class="hero__title">AI &amp; Data Science Engineer</p>
+
+          <p class="hero__bio">
+            I build production AI agents and wire them into the systems teams already run on —
+            observability stacks, cloud infrastructure, and internal tools —
+            using AWS Bedrock, Claude, and multi-server MCP architectures.
+          </p>
+
+          <!-- Rotating AI/DS quote -->
+          <figure class="hero__quote" aria-live="polite" aria-label="Rotating quote">
+            <blockquote class="hero__quote-text" id="quoteText"></blockquote>
+            <figcaption class="hero__quote-author" id="quoteAuthor"></figcaption>
+          </figure>
+
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--primary">See the work</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+
+          <ul class="hero__meta" aria-label="Quick facts">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Telangana, India
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              5+ yrs experience
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+              Genpact
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI/ML Brain Diagram -->
+        <div class="hero__diagram" aria-label="AI and Machine Learning domain diagram">
+          <div class="mcp__scene">
+            <div class="mcp__canvas" id="mcpCanvas">
+              <!-- SVG connector lines drawn by JS -->
+              <svg class="mcp__svg" id="mcpSvg" viewBox="0 0 360 360" aria-hidden="true"></svg>
+
+              <!-- Brain Core -->
+              <div class="mcp__center">
+                <div class="mcp__ring mcp__ring--1" aria-hidden="true"></div>
+                <div class="mcp__ring mcp__ring--2" aria-hidden="true"></div>
+                <div class="mcp__ring mcp__ring--3" aria-hidden="true"></div>
+                <div class="mcp__core">
+                  <div class="mcp__core-inner">
+                    <!-- Brain SVG -->
+                    <svg width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path
+                        d="M32 8 C20 8 12 16 12 26 C12 32 15 37 20 40 L20 54 L44 54 L44 40 C49 37 52 32 52 26 C52 16 44 8 32 8Z" />
+                      <line x1="32" y1="8" x2="32" y2="54" />
+                      <path d="M20 22 C24 20 28 22 32 20" />
+                      <path d="M44 22 C40 20 36 22 32 20" />
+                      <path d="M18 30 C22 28 26 30 30 29" />
+                      <path d="M46 30 C42 28 38 30 34 29" />
+                    </svg>
+                    <span class="mcp__label-top">AI</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- AI/ML domain nodes -->
+              <div class="mcp__node" data-node="deeplearning" style="--nx:85%; --ny:44%">
+                <div class="mcp__node-chip">
+                  <span class="mcp__node-dot" style="background:var(--teal);box-shadow:0 0 8px var(--teal)"></span>
+                  <span class="mcp__node-name">Deep Learning</span>
+                </div>
+              </div>
+              <div class="mcp__node" data-node="genai" style="--nx:58%; --ny:86%">
+                <div class="mcp__node-chip">
+                  <span class="mcp__node-dot" style="background:#f472b6;box-shadow:0 0 8px #f472b6"></span>
+                  <span class="mcp__node-name">Generative AI</span>
+                </div>
+              </div>
+              <div class="mcp__node" data-node="cv" style="--nx:10%; --ny:72%">
+                <div class="mcp__node-chip">
+                  <span class="mcp__node-dot" style="background:#34d399;box-shadow:0 0 8px #34d399"></span>
+                  <span class="mcp__node-name">Computer Vision</span>
+                </div>
+              </div>
+              <div class="mcp__node" data-node="nlp" style="--nx:6%;  --ny:32%">
+                <div class="mcp__node-chip">
+                  <span class="mcp__node-dot" style="background:#a78bfa;box-shadow:0 0 8px #a78bfa"></span>
+                  <span class="mcp__node-name">NLP</span>
+                </div>
+              </div>
+              <div class="mcp__node" data-node="Machine Learning" style="--nx:48%; --ny:5%">
+                <div class="mcp__node-chip">
+                  <span class="mcp__node-dot" style="background:#fbbf24;box-shadow:0 0 8px #fbbf24"></span>
+                  <span class="mcp__node-name">Machine Learning</span>
+                </div>
+              </div>
+
+              <p class="mcp__caption">// Deep Learning · NLP · CV · Gen AI · Machine Learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience" aria-labelledby="exp-heading">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__cmd" aria-hidden="true">$ git log --reverse --author="Bharadwaj"</p>
+          <h2 class="section__title" id="exp-heading">Experience</h2>
+        </header>
+
+        <ol class="timeline" aria-label="Work history timeline">
+
+          <li class="timeline__item" data-reveal>
+            <div class="timeline__marker" aria-hidden="true">
+              <div class="timeline__dot"></div>
+              <div class="timeline__line"></div>
+            </div>
+            <article class="timeline__card">
+              <header class="timeline__card-header">
+                <div>
+                  <h3 class="timeline__role">Data Science Engineer</h3>
+                  <p class="timeline__company">Genpact</p>
+                </div>
+                <time class="timeline__date" datetime="2022-07">Jul 2022 – Present</time>
+              </header>
+              <ul class="timeline__bullets">
+                <li>Built production-grade AI agents on AWS Bedrock with Claude Sonnet, architected multi-server MCP
+                  solutions unifying Splunk, Datadog, and Kubernetes for unified observability and automated incident
+                  response.</li>
+                <li>Shipped scalable APIs for real-time data collection and automated health checks, keeping monitoring
+                  reliable and continuous.</li>
+                <li>Designed and deployed a supply-chain forecasting app on AWS, cutting inventory discrepancies by
+                  <strong>30–40%</strong>.</li>
+                <li>Automated <strong>40%</strong> of the purchase-order workflow, removing manual steps from the
+                  process.</li>
+                <li>Optimized data pipelines for real-time insight, shortening data-to-report cycle times.</li>
+                <li>Built a market-mix model (Random Forest + regression) with a live dashboard, lifting marketing ROI
+                  by <strong>15%</strong>.</li>
+              </ul>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">AWS Bedrock</li>
+                <li class="tag">Claude</li>
+                <li class="tag">MCP</li>
+                <li class="tag">Kubernetes</li>
+                <li class="tag">Splunk</li>
+                <li class="tag">Datadog</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline__item" data-reveal>
+            <div class="timeline__marker" aria-hidden="true">
+              <div class="timeline__dot"></div>
+              <div class="timeline__line"></div>
+            </div>
+            <article class="timeline__card">
+              <header class="timeline__card-header">
+                <div>
+                  <h3 class="timeline__role">Junior Data Science Engineer</h3>
+                  <p class="timeline__company">LogiQ Dreams</p>
+                </div>
+                <time class="timeline__date" datetime="2020-12">Dec 2020 – Jun 2022</time>
+              </header>
+              <ul class="timeline__bullets">
+                <li>Built and optimized classification models in Python (scikit-learn, TensorFlow) to identify household
+                  appliances from sensor data, reaching <strong>78% accuracy</strong>.</li>
+                <li>Analyzed power-consumption patterns to surface actionable, cost-saving insights.</li>
+                <li>Partnered with engineering and business teams to ship AI-driven energy monitoring on IoT sensors.
+                </li>
+              </ul>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">Python</li>
+                <li class="tag">scikit-learn</li>
+                <li class="tag">TensorFlow</li>
+                <li class="tag">IoT</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline__item" data-reveal>
+            <div class="timeline__marker" aria-hidden="true">
+              <div class="timeline__dot"></div>
+            </div>
+            <article class="timeline__card">
+              <header class="timeline__card-header">
+                <div>
+                  <h3 class="timeline__role">Software Intern</h3>
+                  <p class="timeline__company">PSQUARE Groups</p>
+                </div>
+                <time class="timeline__date" datetime="2018-04">Apr 2018 – May 2018</time>
+              </header>
+              <ul class="timeline__bullets">
+                <li>Built and maintained a web application end-to-end using PHP, SQL, HTML, CSS, and JavaScript —
+                  delivering a stable, working product for the team.</li>
+                <li>Designed the underlying database structures, improving backend performance.</li>
+              </ul>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag">PHP</li>
+                <li class="tag">SQL</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section stack" id="stack" aria-labelledby="stack-heading">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__cmd" aria-hidden="true">$ cat skills.yaml</p>
+          <h2 class="section__title" id="stack-heading">Stack</h2>
+          <p class="section__sub">Hover each card to flip</p>
+        </header>
+
+        <div class="skills__grid">
+
+          <!-- Card 1 -->
+          <div class="flip-card" data-reveal>
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <div class="flip-card__icon" style="--icon-color:#22d3ee">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <h3 class="flip-card__title">Languages &amp; Frameworks</h3>
+                <p class="flip-card__hint">hover to see stack</p>
+                <div class="flip-card__bar" style="--bar-color:#22d3ee"></div>
+              </div>
+              <div class="flip-card__back" style="--back-glow:#22d3ee">
+                <h3 class="flip-card__back-title">Languages &amp; Frameworks</h3>
+                <ul class="flip-card__tags">
+                  <li>Python</li>
+                  <li>TypeScript</li>
+                  <li>FastAPI</li>
+                  <li>Django</li>
+                  <li>Flask</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flip-card" data-reveal>
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <div class="flip-card__icon" style="--icon-color:#a78bfa">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5" />
+                    <path d="M2 12l10 5 10-5" />
+                  </svg>
+                </div>
+                <h3 class="flip-card__title">AI &amp; LLMs</h3>
+                <p class="flip-card__hint">hover to see stack</p>
+                <div class="flip-card__bar" style="--bar-color:#a78bfa"></div>
+              </div>
+              <div class="flip-card__back" style="--back-glow:#a78bfa">
+                <h3 class="flip-card__back-title">AI &amp; LLMs</h3>
+                <ul class="flip-card__tags">
+                  <li>NLP</li>
+                  <li>Claude</li>
+                  <li>LLMs</li>
+                  <li>AI Agents</li>
+                  <li>Function Calling</li>
+                  <li>MCP</li>
+                  <li>RAG</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flip-card" data-reveal>
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <div class="flip-card__icon" style="--icon-color:#f472b6">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                  </svg>
+                </div>
+                <h3 class="flip-card__title">Databases &amp; Tools</h3>
+                <p class="flip-card__hint">hover to see stack</p>
+                <div class="flip-card__bar" style="--bar-color:#f472b6"></div>
+              </div>
+              <div class="flip-card__back" style="--back-glow:#f472b6">
+                <h3 class="flip-card__back-title">Databases &amp; Tools</h3>
+                <ul class="flip-card__tags">
+                  <li>SQL</li>
+                  <li>MongoDB</li>
+                  <li>Docker</li>
+                  <li>Git</li>
+                  <li>Gemini AI</li>
+                  <li>Vertex AI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="flip-card" data-reveal>
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <div class="flip-card__icon" style="--icon-color:#fbbf24">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <path d="M8 21h8m-4-4v4" />
+                  </svg>
+                </div>
+                <h3 class="flip-card__title">Cloud &amp; DevOps</h3>
+                <p class="flip-card__hint">hover to see stack</p>
+                <div class="flip-card__bar" style="--bar-color:#fbbf24"></div>
+              </div>
+              <div class="flip-card__back" style="--back-glow:#fbbf24">
+                <h3 class="flip-card__back-title">Cloud &amp; DevOps</h3>
+                <ul class="flip-card__tags">
+                  <li>AWS</li>
+                  <li>GCP</li>
+                  <li>Docker</li>
+                  <li>GitHub Actions</li>
+                  <li>Nginx</li>
+                  <li>Linux</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="flip-card" data-reveal>
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <div class="flip-card__icon" style="--icon-color:#34d399">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3" />
+                    <path
+                      d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+                  </svg>
+                </div>
+                <h3 class="flip-card__title">Core Concepts</h3>
+                <p class="flip-card__hint">hover to see stack</p>
+                <div class="flip-card__bar" style="--bar-color:#34d399"></div>
+              </div>
+              <div class="flip-card__back" style="--back-glow:#34d399">
+                <h3 class="flip-card__back-title">Core Concepts</h3>
+                <ul class="flip-card__tags">
+                  <li>Prompt Engineering</li>
+                  <li>Workflow Automation</li>
+                  <li>OpenCV</li>
+                  <li>OCR</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__cmd" aria-hidden="true">$ ls ./projects</p>
+          <h2 class="section__title" id="projects-heading">Projects</h2>
+        </header>
+
+        <div class="projects__grid">
+
+          <!-- Featured Project -->
+          <article class="proj-card proj-card--featured" data-reveal aria-label="GovSahay AI project">
+            <div class="proj-card__glow" aria-hidden="true"></div>
+
+            <div class="proj-card__header">
+              <div class="proj-card__meta">
+                <span class="proj-card__badge proj-card__badge--featured">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  Featured Project
+                </span>
+                <span class="proj-card__flag" aria-label="India">🇮🇳</span>
+              </div>
+              <div class="proj-card__links">
+                <a href="#" class="proj-card__icon-link" aria-label="View on GitHub" title="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                  </svg>
+                </a>
+                <a href="#" class="proj-card__icon-link" aria-label="Live demo" title="Live">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="proj-card__body">
+              <h3 class="proj-card__name">GovSahay AI</h3>
+              <p class="proj-card__tagline">AI-Powered Indian Government Services Assistant</p>
+              <p class="proj-card__desc">
+                A multilingual, evidence-grounded AI assistant that helps citizens discover government
+                services, understand application procedures, check scheme eligibility, and navigate
+                official government sources.
+              </p>
+
+              <!-- Architecture pills -->
+              <div class="proj-card__arch">
+                <span class="proj-arch__label">Architecture</span>
+                <div class="proj-arch__pills">
+                  <span class="proj-arch__pill">Hybrid RAG</span>
+                  <span class="proj-arch__pill">Agentic Query Orchestration</span>
+                  <span class="proj-arch__pill">Evidence Verification</span>
+                </div>
+              </div>
+
+              <!-- Capabilities -->
+              <div class="proj-card__capabilities">
+                <span class="proj-arch__label">Key capabilities</span>
+                <ul class="proj-cap__list">
+                  <li>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                    Government service discovery
+                  </li>
+                  <li>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                    Scheme eligibility reasoning
+                  </li>
+                  <li>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                    Step-by-step application guidance
+                  </li>
+                  <li>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                    Multilingual question answering
+                  </li>
+                  <li>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                    Source citations &amp; evidence tracking
+                  </li>
+                  <li>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      aria-hidden="true">
+                      <polyline points="9 18 15 12 9 6" />
+                    </svg>
+                    Hallucination detection &amp; confidence scoring
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="proj-card__footer">
+              <span class="proj-arch__label">Built with</span>
+              <ul class="tag-list proj-card__tags">
+                <li class="tag">Python</li>
+                <li class="tag">FastAPI</li>
+                <li class="tag">Next.js</li>
+                <li class="tag">Qdrant</li>
+                <li class="tag">PostgreSQL</li>
+                <li class="tag">BM25</li>
+                <li class="tag">LLMs</li>
+                <li class="tag">Docker</li>
+              </ul>
+            </div>
+
+            <!-- decorative side accent -->
+            <div class="proj-card__side-accent" aria-hidden="true">
+              <div class="proj-card__side-dot"></div>
+              <div class="proj-card__side-line"></div>
+              <div class="proj-card__side-dot"></div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="projects__more" aria-hidden="true">
+          <span class="projects__more-line"></span>
+          <span class="projects__more-text">more projects coming soon</span>
+          <span class="projects__more-line"></span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__cmd" aria-hidden="true">$ man bharadwaj</p>
+          <h2 class="section__title" id="about-heading">About</h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__text" data-reveal>
+            <p>
+              I'm an AI &amp; Data Science Engineer with 5+ years of experience across AI agent
+              engineering, cloud infrastructure, and full-stack development. Most of my recent
+              work has been building production-grade AI agents on AWS Bedrock and connecting
+              them to the tools organizations already depend on — Splunk, Datadog, Kubernetes —
+              through multi-server MCP architectures, so automation plugs into real workflows
+              instead of living beside them.
+            </p>
+            <p>
+              Before that, I worked at the model layer directly: building classification and
+              forecasting models, shipping IoT-connected monitoring, and designing the databases
+              and APIs underneath. I like the seam between a model and the system around it —
+              that's usually where the real engineering is.
+            </p>
+          </div>
+
+          <aside class="about__facts" data-reveal aria-label="Quick facts">
+            <dl>
+              <div class="about__fact">
+                <dt>Based in</dt>
+                <dd>Telangana, India</dd>
+              </div>
+              <div class="about__fact">
+                <dt>Currently</dt>
+                <dd>Data Science Engineer, Genpact</dd>
+              </div>
+              <div class="about__fact">
+                <dt>Education</dt>
+                <dd>
+                  B.Tech, Computer Science &amp; Engineering<br />
+                  <small>Swarna Bharathi IST, Khammam · 2015–2019</small>
+                </dd>
+              </div>
+              <div class="about__fact">
+                <dt>Focus</dt>
+                <dd>AI - Machine Learning, NLP, Generative AI, LLM, AI Agents</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section__inner">
+        <header class="section__header section__header--center">
+          <p class="section__cmd" aria-hidden="true">$ ./contact.sh</p>
+          <h2 class="section__title" id="contact-heading">Let's build something</h2>
+          <p class="contact__sub">Open to AI engineering roles and select collaborations on agent &amp; MCP tooling.</p>
+        </header>
+
+        <div class="contact__links" data-reveal>
+          <a href="mailto:bharadwjinamahanthi@gmail.com" class="contact__link contact__link--email"
+            aria-label="Send email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <polyline points="22,4 12,13 2,4" />
+            </svg>
+            bharadwjinamahanthi@gmail.com
+          </a>
+          <div class="contact__socials">
+            <a href="https://www.linkedin.com/in/bharadwajsathya/" target="_blank" rel="noopener noreferrer"
+              class="contact__social" aria-label="LinkedIn profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn ↗
+            </a>
+            <a href="https://github.com/Bharadwaj-Sathya" target="_blank" rel="noopener noreferrer"
+              class="contact__social" aria-label="GitHub profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              GitHub ↗
+            </a>
+            <a href="tel:+919666033443" class="contact__social" aria-label="Phone number">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +91 96660 33443
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <span>© <span id="year"></span> Bharadwaj I V V S</span>
+      <span class="footer__tagline">AI &amp; Data Science Engineer</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
