@@ -89,23 +89,31 @@ AI & Data Science Engineer with **5+ years** of experience across AI agent engin
 
 ## 🚀 Featured Project
 
-### 🇮🇳 GovSahay AI
-> **AI-Powered Indian Government Services Assistant**
+### 🇮🇳 India Legal AI
+> **AI-Powered Indian Legal Knowledge Assistant**
 
-A multilingual, evidence-grounded AI assistant that helps citizens discover government services, understand application procedures, check scheme eligibility, and navigate official government sources.
+An evidence-grounded AI assistant that helps users understand the Constitution of India, Indian laws, legal sections, and historical-to-current legal provisions. Uses Hybrid RAG to retrieve relevant provisions from authoritative legal documents and generate clear, citation-backed explanations.
 
-**Architecture:** Hybrid RAG · Agentic Query Orchestration · Evidence Verification
+**Core LLM Pipeline:**
+`Legal PDFs` → `Ingestion` → `Chunking` → `Embeddings` → `Hybrid Retrieval` → `Reranking` → `LLM` → `Cited Answer`
 
 **Built with:**
-`Python` `FastAPI` `Next.js` `Qdrant` `PostgreSQL` `BM25` `LLMs` `Docker`
+`Python` `FastAPI` `Next.js` `TypeScript` `PostgreSQL` `pgvector` `BM25` `BGE Embeddings` `Reranker` `LLMs` `LangChain` `Langfuse` `Redis` `Docker` `PyMuPDF`
 
 **Key capabilities:**
-- → Government service discovery
-- → Scheme eligibility reasoning  
-- → Step-by-step application guidance
-- → Multilingual question answering
-- → Source citations & evidence tracking
-- → Hallucination detection & confidence scoring
+- ⚖️ Legal section discovery
+- 📖 Constitution & Act-based question answering
+- 🔄 Historical-to-current law mapping (IPC → BNS)
+- 🔎 Hybrid semantic + keyword search
+- 📑 Section, subsection & clause retrieval
+- 🔗 Source citations & evidence tracking
+- 🛡️ Hallucination detection & confidence scoring
+- 💬 Conversational legal document Q&A
+
+**Data Sources:** Constitution of India · BNS 2023 · BNSS 2023 · BSA 2023 · IPC 1860 · CrPC 1973 · Indian Evidence Act 1872 · Central Acts
+
+**Example queries:**
+> *"What is Section 420?"* · *"Current equivalent of IPC 420?"* · *"Explain Article 21 in simple language."* · *"What is Section 318(4) of BNS?"*
 
 ---
 

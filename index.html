@@ -486,104 +486,95 @@
         <div class="projects__grid">
 
           <!-- Featured Project -->
-          <article class="proj-card proj-card--featured" data-reveal aria-label="GovSahay AI project">
+          <article class="proj-card proj-card--featured" data-reveal aria-label="India Legal AI project">
             <div class="proj-card__glow" aria-hidden="true"></div>
 
             <div class="proj-card__header">
               <div class="proj-card__meta">
                 <span class="proj-card__badge proj-card__badge--featured">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                   Featured Project
                 </span>
-                <span class="proj-card__flag" aria-label="India">🇮🇳</span>
+                <span class="proj-card__flag" aria-label="India">&#127470;&#127475;</span>
               </div>
               <div class="proj-card__links">
                 <a href="#" class="proj-card__icon-link" aria-label="View on GitHub" title="GitHub">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                  </svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </a>
                 <a href="#" class="proj-card__icon-link" aria-label="Live demo" title="Live">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    aria-hidden="true">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" y1="14" x2="21" y2="3" />
-                  </svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </a>
               </div>
             </div>
 
             <div class="proj-card__body">
-              <h3 class="proj-card__name">GovSahay AI</h3>
-              <p class="proj-card__tagline">AI-Powered Indian Government Services Assistant</p>
+              <h3 class="proj-card__name">India Legal AI</h3>
+              <p class="proj-card__tagline">AI-Powered Indian Legal Knowledge Assistant</p>
               <p class="proj-card__desc">
-                A multilingual, evidence-grounded AI assistant that helps citizens discover government
-                services, understand application procedures, check scheme eligibility, and navigate
-                official government sources.
+                An evidence-grounded AI assistant that helps users understand the Constitution of India,
+                Indian laws, legal sections, and historical-to-current legal provisions. Uses Hybrid RAG
+                to retrieve relevant provisions from authoritative legal documents and generate clear,
+                citation-backed explanations.
               </p>
 
-              <!-- Architecture pills -->
               <div class="proj-card__arch">
-                <span class="proj-arch__label">Architecture</span>
-                <div class="proj-arch__pills">
-                  <span class="proj-arch__pill">Hybrid RAG</span>
-                  <span class="proj-arch__pill">Agentic Query Orchestration</span>
-                  <span class="proj-arch__pill">Evidence Verification</span>
+                <span class="proj-arch__label">Core LLM Pipeline</span>
+                <div class="proj-pipeline">
+                  <span class="proj-pipeline__step">Legal PDFs</span>
+                  <span class="proj-pipeline__arrow">&rarr;</span>
+                  <span class="proj-pipeline__step">Ingestion</span>
+                  <span class="proj-pipeline__arrow">&rarr;</span>
+                  <span class="proj-pipeline__step">Chunking</span>
+                  <span class="proj-pipeline__arrow">&rarr;</span>
+                  <span class="proj-pipeline__step">Embeddings</span>
+                  <span class="proj-pipeline__arrow">&rarr;</span>
+                  <span class="proj-pipeline__step">Hybrid Retrieval</span>
+                  <span class="proj-pipeline__arrow">&rarr;</span>
+                  <span class="proj-pipeline__step">Reranking</span>
+                  <span class="proj-pipeline__arrow">&rarr;</span>
+                  <span class="proj-pipeline__step highlight">LLM</span>
+                  <span class="proj-pipeline__arrow">&rarr;</span>
+                  <span class="proj-pipeline__step">Cited Answer</span>
                 </div>
               </div>
 
-              <!-- Capabilities -->
               <div class="proj-card__capabilities">
                 <span class="proj-arch__label">Key capabilities</span>
                 <ul class="proj-cap__list">
-                  <li>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                      aria-hidden="true">
-                      <polyline points="9 18 15 12 9 6" />
-                    </svg>
-                    Government service discovery
-                  </li>
-                  <li>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                      aria-hidden="true">
-                      <polyline points="9 18 15 12 9 6" />
-                    </svg>
-                    Scheme eligibility reasoning
-                  </li>
-                  <li>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                      aria-hidden="true">
-                      <polyline points="9 18 15 12 9 6" />
-                    </svg>
-                    Step-by-step application guidance
-                  </li>
-                  <li>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                      aria-hidden="true">
-                      <polyline points="9 18 15 12 9 6" />
-                    </svg>
-                    Multilingual question answering
-                  </li>
-                  <li>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                      aria-hidden="true">
-                      <polyline points="9 18 15 12 9 6" />
-                    </svg>
-                    Source citations &amp; evidence tracking
-                  </li>
-                  <li>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                      aria-hidden="true">
-                      <polyline points="9 18 15 12 9 6" />
-                    </svg>
-                    Hallucination detection &amp; confidence scoring
-                  </li>
+                  <li><span class="proj-cap__emoji">&#9878;&#65039;</span> Legal section discovery</li>
+                  <li><span class="proj-cap__emoji">&#128214;</span> Constitution &amp; Act-based Q&amp;A</li>
+                  <li><span class="proj-cap__emoji">&#128260;</span> Historical-to-current law mapping</li>
+                  <li><span class="proj-cap__emoji">&#128270;</span> Hybrid semantic + keyword search</li>
+                  <li><span class="proj-cap__emoji">&#128209;</span> Section, subsection &amp; clause retrieval</li>
+                  <li><span class="proj-cap__emoji">&#128279;</span> Source citations &amp; evidence tracking</li>
+                  <li><span class="proj-cap__emoji">&#128737;&#65039;</span> Hallucination detection &amp; confidence scoring</li>
+                  <li><span class="proj-cap__emoji">&#128172;</span> Conversational legal document Q&amp;A</li>
                 </ul>
+              </div>
+
+              <div class="proj-card__queries">
+                <span class="proj-arch__label">Example queries</span>
+                <div class="proj-queries__list">
+                  <span class="proj-query">&ldquo;What is Section 420?&rdquo;</span>
+                  <span class="proj-query">&ldquo;Current equivalent of IPC 420?&rdquo;</span>
+                  <span class="proj-query">&ldquo;Explain Article 21 in simple language.&rdquo;</span>
+                  <span class="proj-query">&ldquo;What is Section 318(4) of BNS?&rdquo;</span>
+                  <span class="proj-query">&ldquo;Difference between IPC and BNS?&rdquo;</span>
+                </div>
+              </div>
+
+              <div class="proj-card__sources">
+                <span class="proj-arch__label">Data Sources</span>
+                <div class="proj-arch__pills">
+                  <span class="proj-arch__pill">Constitution of India</span>
+                  <span class="proj-arch__pill">BNS 2023</span>
+                  <span class="proj-arch__pill">BNSS 2023</span>
+                  <span class="proj-arch__pill">BSA 2023</span>
+                  <span class="proj-arch__pill">IPC 1860</span>
+                  <span class="proj-arch__pill">CrPC 1973</span>
+                  <span class="proj-arch__pill">Evidence Act 1872</span>
+                  <span class="proj-arch__pill">Central Acts</span>
+                </div>
               </div>
             </div>
 
@@ -593,15 +584,21 @@
                 <li class="tag">Python</li>
                 <li class="tag">FastAPI</li>
                 <li class="tag">Next.js</li>
-                <li class="tag">Qdrant</li>
+                <li class="tag">TypeScript</li>
                 <li class="tag">PostgreSQL</li>
+                <li class="tag">pgvector</li>
                 <li class="tag">BM25</li>
+                <li class="tag">BGE Embeddings</li>
+                <li class="tag">Reranker</li>
                 <li class="tag">LLMs</li>
+                <li class="tag">LangChain</li>
+                <li class="tag">Langfuse</li>
+                <li class="tag">Redis</li>
                 <li class="tag">Docker</li>
+                <li class="tag">PyMuPDF</li>
               </ul>
             </div>
 
-            <!-- decorative side accent -->
             <div class="proj-card__side-accent" aria-hidden="true">
               <div class="proj-card__side-dot"></div>
               <div class="proj-card__side-line"></div>
